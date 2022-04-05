@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-03T19:44:34 IST" name="ProjectSuite" finished-at="2022-04-03T19:44:46 IST" duration-ms="12215">
+  <suite started-at="2022-04-05T22:20:13 IST" name="Default suite" finished-at="2022-04-05T22:20:13 IST" duration-ms="17">
     <groups>
     </groups>
-    <test started-at="2022-04-03T19:44:34 IST" name="ReebokProject" finished-at="2022-04-03T19:44:46 IST" duration-ms="12215">
-      <class name="jenkins.JenkinsReebok">
-        <test-method signature="f()[pri:0, instance:jenkins.JenkinsReebok@d35dea7]" started-at="2022-04-03T19:44:34 IST" name="f" finished-at="2022-04-03T19:44:46 IST" duration-ms="12193" status="PASS">
+    <test started-at="2022-04-05T22:20:13 IST" name="Default test" finished-at="2022-04-05T22:20:13 IST" duration-ms="17">
+      <class name="logs.BaseTest">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:logs.BaseTest@942a29c]" started-at="2022-04-05T22:20:13 IST" name="setUpBrowser" finished-at="2022-04-05T22:20:13 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- jenkins.JenkinsReebok -->
-    </test> <!-- ReebokProject -->
-  </suite> <!-- ProjectSuite -->
+        </test-method> <!-- setUpBrowser -->
+        <test-method is-config="true" signature="tearDown(org.openqa.selenium.WebDriver)[pri:0, instance:logs.BaseTest@942a29c]" started-at="2022-04-05T22:20:13 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1649177413662" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated tearDown.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated tearDown.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- logs.BaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
